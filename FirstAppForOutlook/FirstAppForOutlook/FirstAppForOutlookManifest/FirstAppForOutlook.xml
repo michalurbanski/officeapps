@@ -3,10 +3,11 @@
 <OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="MailApp">
   <Id>d32232bc-ee4f-4d0a-a872-f691eeb1b0e9</Id>
   <Version>1.0.0.0</Version>
-  <ProviderName>[Provider name]</ProviderName>
+  <ProviderName>michalurbanski</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
-  <DisplayName DefaultValue="FirstAppForOutlook" />
-  <Description DefaultValue="FirstAppForOutlook"/>
+  <DisplayName DefaultValue="My First Outlook App" />
+  <Description DefaultValue="This is my first outlook application"/>
+  <IconUrl DefaultValue="~remoteAppUrl/Images/githubAvatar.PNG" />
   <Hosts>
     <Host Name="Mailbox" />
   </Hosts>
@@ -31,7 +32,10 @@
   <Permissions>ReadWriteItem</Permissions>
   <Rule xsi:type="RuleCollection" Mode="Or">
     <Rule xsi:type="ItemIs" ItemType="Message" FormType="Edit" />
-    <Rule xsi:type="ItemIs" ItemType="Message" FormType="Read" />
+    <Rule xsi:type="RuleCollection" Mode="And" >
+      <Rule xsi:type="ItemIs" ItemType="Message" FormType="Read" />
+      <Rule xsi:type="ItemHasKnownEntity" EntityType="Url" FilterName="Youtube video" RegExFilter="youtube\.com\/watch" IgnoreCase="true" />
+    </Rule>
   </Rule>
   <DisableEntityHighlighting>false</DisableEntityHighlighting>
 </OfficeApp>
