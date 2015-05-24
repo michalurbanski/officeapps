@@ -8,7 +8,7 @@
         $(document).ready(function () {
             app.initialize();
 
-            displayItemDetails();
+            //displayItemDetails();
         });
     };
 
