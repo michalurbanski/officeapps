@@ -8,11 +8,46 @@
         $(document).ready(function () {
             app.initialize();
 
-            $('#myButton').click(insertMatrix);
+
+            $('#btnCreateBindings').click(onCreateBindings);
+            $('#btnSetBindingValues').click(onSetBindingValues);
+            $('#btnRegisterHandlers').click(onRegisterHandlers);
+
+            //$('#myButton').click(insertMatrix);
 
             //$('#get-data-from-selection').click(getDataFromSelection);
         });
     };
+
+    function onCreateBindings() {
+        // first argument is control name in word document set via properties window
+        // third argument is name used in code for this element
+        Office.context.document.bindings.addFromNamedItemAsync("firstName", Office.BindingType.Text,
+            { id: "firstName" }, onBindingCreated);
+        Office.context.document.bindings.addFromNamedItemAsync("lastName", Office.BindingType.Text,
+            { id: "lastName" }, onBindingCreated);
+        Office.context.document.bindings.addFromNamedItemAsync("company", Office.BindingType.Text,
+            { id: "company" }, onBindingCreated);
+    }
+
+    function onBindingCreated(asyncResult){
+        if (asyncResult.status === Office.AsyncResultStatus.Succeeded) {
+            app.showNotification('Added new binding with type: ' + asyncResult.value.type +
+                ' and id: ' + asyncResult.value.id);
+        }
+        else {
+            app.showNotification("Error", asyncResult.error.message);
+        }
+    }
+
+    function onSetBindingValues() {
+
+    }
+
+    function onRegisterHandlers() {
+
+    }
+
 
     function insertMatrix() {
         var matrix = [['Element', 'Customer'],
