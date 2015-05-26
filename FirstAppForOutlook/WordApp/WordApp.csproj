@@ -1,9 +1,10 @@
-﻿<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{aa10a0c2-bec1-40df-b29c-0ea6010f59e0}</ProjectGuid>
+    <ProjectGuid>{AA10A0C2-BEC1-40DF-B29C-0EA6010F59E0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>WordApp</RootNamespace>
@@ -39,14 +40,24 @@
     <WarningLevel>4</WarningLevel>
     <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
-  
   <ItemGroup>
     <None Include="WordAppManifest\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{40e60f64-aadb-4672-9a9b-2a7083abcc7f}</SharePointProjectItemId>
     </None>
-    <Content Include="WordAppManifest\WordApp.xml" >
+    <Content Include="WordAppManifest\WordApp.xml">
       <OpcRelationship>manifest-oemanifest</OpcRelationship>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WordAppWeb\WordAppWeb.csproj">
+      <Project>{A19F6FF2-8970-4224-AA95-5C537894E793}</Project>
+      <Name>WordAppWeb</Name>
+      <Private>True</Private>
+      <RoleType>Web</RoleType>
+      <OutputItemType>SharePointWebProjectOutput</OutputItemType>
+      <RoleName>WordAppWeb</RoleName>
+      <ReferenceOutputAssembly>False</ReferenceOutputAssembly>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

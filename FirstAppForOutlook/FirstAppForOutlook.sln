@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstAppForOutlook", "First
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstAppForOutlookWeb", "FirstAppForOutlookWeb\FirstAppForOutlookWeb.csproj", "{1A6EBE4D-3E71-42B2-8CE1-CDD41D50476F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordApp", "WordApp\WordApp.csproj", "{AA10A0C2-BEC1-40DF-B29C-0EA6010F59E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordAppWeb", "WordAppWeb\WordAppWeb.csproj", "{A19F6FF2-8970-4224-AA95-5C537894E793}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +27,16 @@ Global
 		{1A6EBE4D-3E71-42B2-8CE1-CDD41D50476F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1A6EBE4D-3E71-42B2-8CE1-CDD41D50476F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1A6EBE4D-3E71-42B2-8CE1-CDD41D50476F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA10A0C2-BEC1-40DF-B29C-0EA6010F59E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA10A0C2-BEC1-40DF-B29C-0EA6010F59E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA10A0C2-BEC1-40DF-B29C-0EA6010F59E0}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{AA10A0C2-BEC1-40DF-B29C-0EA6010F59E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA10A0C2-BEC1-40DF-B29C-0EA6010F59E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA10A0C2-BEC1-40DF-B29C-0EA6010F59E0}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{A19F6FF2-8970-4224-AA95-5C537894E793}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A19F6FF2-8970-4224-AA95-5C537894E793}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A19F6FF2-8970-4224-AA95-5C537894E793}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A19F6FF2-8970-4224-AA95-5C537894E793}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
