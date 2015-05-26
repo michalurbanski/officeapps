@@ -41,13 +41,24 @@
     }
 
     function onSetBindingValues() {
-
+        // NOTE: first selector is Case-Sensitive
+        Office.select("bindings#firstName", testSuccess).setDataAsync("Customer 1", testSuccess);
+        Office.select("bindings#lastName", testSuccess).setDataAsync("Customer 2", testSuccess);
+        Office.select("bindings#company", testSuccess).setDataAsync("Customer 3", testSuccess);
     }
 
     function onRegisterHandlers() {
-
+        Office.select("bindings#firstName", testSuccess).addHandlerAsync(Office.EventType.BindingDataChanged,
+           onBindingDataChanged, testSuccess);
+        Office.select("bindings#lastName", testSuccess).addHandlerAsync(Office.EventType.BindingDataChanged,
+            onBindingDataChanged, testSuccess);
+        Office.select("bindings#company", testSuccess).addHandlerAsync(Office.EventType.BindingDataChanged,
+            onBindingDataChanged, testSuccess);
     }
 
+    function onBindingDataChanged(eventArgs){
+        app.showNotification("Binding with id: " + eventArgs.binding.id + " was updated");
+    }
 
     function insertMatrix() {
         var matrix = [['Element', 'Customer'],
