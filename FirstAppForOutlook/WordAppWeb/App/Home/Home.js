@@ -8,9 +8,27 @@
         $(document).ready(function () {
             app.initialize();
 
-            $('#get-data-from-selection').click(getDataFromSelection);
+            $('#myButton').click(insertMatrix);
+
+            //$('#get-data-from-selection').click(getDataFromSelection);
         });
     };
+
+    function insertMatrix() {
+        var matrix = [['Element', 'Customer'],
+                        ['Reference 1', 'Customer 1'],
+                        ['Reference 2', 'Customer 2']];
+
+        Office.context.document.setSelectedDataAsync(matrix, { coercionType: "matrix" }, testSuccess);
+    }
+
+    function testSuccess(asyncResult) {
+        /// <summary>Common function to test error in async callback for all functions</summary>
+
+        if (asyncResult.status === Office.AsyncResultStatus.Failed) {
+            app.showNotification("Error", asyncResult.error.message);
+        }
+    }
 
     // Reads data from current document selection and displays a notification
     function getDataFromSelection() {

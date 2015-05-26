@@ -41,6 +41,7 @@
     <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <ItemGroup>
+    <None Include="test.docx" />
     <None Include="WordAppManifest\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{40e60f64-aadb-4672-9a9b-2a7083abcc7f}</SharePointProjectItemId>
     </None>
