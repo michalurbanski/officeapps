@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordApp", "WordApp\WordApp.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordAppWeb", "WordAppWeb\WordAppWeb.csproj", "{A19F6FF2-8970-4224-AA95-5C537894E793}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PowerPointApp", "PowerPointApp\PowerPointApp.csproj", "{94CBCD0A-3C3F-4DAB-8A06-D97254B4D075}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PowerPointAppWeb", "PowerPointAppWeb\PowerPointAppWeb.csproj", "{5F76ED72-6623-4B62-9C2F-A94B967F1F52}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +41,16 @@ Global
 		{A19F6FF2-8970-4224-AA95-5C537894E793}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A19F6FF2-8970-4224-AA95-5C537894E793}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A19F6FF2-8970-4224-AA95-5C537894E793}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94CBCD0A-3C3F-4DAB-8A06-D97254B4D075}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94CBCD0A-3C3F-4DAB-8A06-D97254B4D075}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94CBCD0A-3C3F-4DAB-8A06-D97254B4D075}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{94CBCD0A-3C3F-4DAB-8A06-D97254B4D075}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94CBCD0A-3C3F-4DAB-8A06-D97254B4D075}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94CBCD0A-3C3F-4DAB-8A06-D97254B4D075}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{5F76ED72-6623-4B62-9C2F-A94B967F1F52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F76ED72-6623-4B62-9C2F-A94B967F1F52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F76ED72-6623-4B62-9C2F-A94B967F1F52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F76ED72-6623-4B62-9C2F-A94B967F1F52}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
