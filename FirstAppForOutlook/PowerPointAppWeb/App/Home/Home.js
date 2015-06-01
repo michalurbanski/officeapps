@@ -19,6 +19,9 @@
             $('#cmdPause').click(onPause);
             $('#cmdStop').click(onStop); 
 
+            // Call to web service
+            loadVideos(); 
+
             //$('#results').text("Hello world");
             //$('#get-data-from-selection').click(getDataFromSelection);
         });
@@ -73,3 +76,24 @@ function onPause() {
 function onStop() {
     player.stopVideo(); 
 }
+
+function loadVideos() {
+    $.ajax({
+        url: "/api/videos/" // by default GET
+    }).done(function (videos) {
+        $('#videoList').empty();
+
+        for (var i = 0; i < videos.length; i++) {
+            $('#videoList').append($("<option>", { value: videos[i].VideoId }).text(videos[i].Title));
+        }
+
+        $('#videoList').click(onLoadVideo);
+    });
+};
+
+function onLoadVideo() {
+    var videoId = $('#videoList').val();
+    if (videoId) {
+        player.loadVideoById(videoId);
+    }
+};
