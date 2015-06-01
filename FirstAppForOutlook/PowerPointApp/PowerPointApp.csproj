@@ -49,6 +49,7 @@
     <Content Include="PowerPointAppManifest\PowerPointApp.xml">
       <OpcRelationship>manifest-oemanifest</OpcRelationship>
     </Content>
+    <None Include="Presentation1.pptx" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PowerPointAppWeb\PowerPointAppWeb.csproj">
