@@ -20,6 +20,7 @@
     <CspkgPartId>{aff9e22d-ef24-4afc-b9b2-6d0f9790ffd9}</CspkgPartId>
     <SqlPackagePartId>{59428262-4dc3-4375-81ab-e199040b84b9}</SqlPackagePartId>
     <ProjectMode>OfficeApp</ProjectMode>
+    <ActivePublishProfile>local iis</ActivePublishProfile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
