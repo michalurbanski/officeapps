@@ -8,8 +8,18 @@
         $(document).ready(function () {
             app.initialize();
 
-            $('#results').text("Hello world");
+            var tag = document.createElement("script");
+            tag.src = "https://www.youtube.com/iframe_api";
 
+            var firstScriptTag = document.getElementsByTagName("script")[0];
+            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag); 
+
+            // Event handlers registration 
+            $('#cmdStart').click(onStart);
+            $('#cmdPause').click(onPause);
+            $('#cmdStop').click(onStop); 
+
+            //$('#results').text("Hello world");
             //$('#get-data-from-selection').click(getDataFromSelection);
         });
     };
@@ -31,3 +41,35 @@
     //    }
     //}
 })();
+
+
+// Support for yt player
+var player;
+
+function onYouTubeIframeAPIReady() {
+    var videoId = "9Cyokaj3BJU"; // This should be Sweet Home Alabama :) 
+    player = new YT.Player('player', {
+        height: '390', 
+        width: '390', 
+        videoId: videoId, 
+        events: {
+            'onReady' : onPlayerReady
+        }
+    });
+};
+
+function onPlayerReady(event){
+    event.target.playVideo(); 
+}
+
+function onStart() {
+    player.playVideo(); 
+}
+
+function onPause() {
+    player.pauseVideo(); 
+}
+
+function onStop() {
+    player.stopVideo(); 
+}
