@@ -15,9 +15,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PowerPointApp", "PowerPoint
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PowerPointAppWeb", "PowerPointAppWeb\PowerPointAppWeb.csproj", "{5F76ED72-6623-4B62-9C2F-A94B967F1F52}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcellApp", "ExcellApp\ExcellApp.csproj", "{477A80E3-36F2-4FCC-8145-50D964C5BD8E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcelApp", "ExcellApp\ExcelApp.csproj", "{477A80E3-36F2-4FCC-8145-50D964C5BD8E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcellAppWeb", "ExcellAppWeb\ExcellAppWeb.csproj", "{E63F35F7-B282-44EC-952C-0AD7E6067C63}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcelAppWeb", "ExcellAppWeb\ExcelAppWeb.csproj", "{E63F35F7-B282-44EC-952C-0AD7E6067C63}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
