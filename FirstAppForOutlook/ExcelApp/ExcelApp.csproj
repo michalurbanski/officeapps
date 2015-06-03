@@ -50,7 +50,7 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ExcellAppWeb\ExcelAppWeb.csproj">
+    <ProjectReference Include="..\ExcelAppWeb\ExcelAppWeb.csproj">
       <Project>{E63F35F7-B282-44EC-952C-0AD7E6067C63}</Project>
       <Name>ExcelAppWeb</Name>
       <Private>True</Private>
