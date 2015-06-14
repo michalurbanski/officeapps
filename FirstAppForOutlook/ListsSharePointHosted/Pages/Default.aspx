@@ -17,6 +17,7 @@
     <link rel="Stylesheet" type="text/css" href="../Content/App.css" />
 
     <!-- Add your JavaScript to the following file -->
+    <script type="text/javascript" src="../Scripts/Lists.js"></script>
     <script type="text/javascript" src="../Scripts/App.js"></script>
 </asp:Content>
 
@@ -27,12 +28,5 @@
 
 <%-- The markup and script in the following Content element will be placed in the <body> of the page --%>
 <asp:Content ContentPlaceHolderID="PlaceHolderMain" runat="server">
-
-    <div>
-        <p id="message">
-            <!-- The following content will be replaced with the user name when you run the app - see App.js -->
-            initializing...
-        </p>
-    </div>
 
 </asp:Content>
