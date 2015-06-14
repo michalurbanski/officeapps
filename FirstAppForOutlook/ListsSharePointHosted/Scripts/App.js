@@ -4,8 +4,14 @@
 window.Lists = window.Lists || {}; // Creates new "Lists" object
 
 $(document).ready(function () {
-    Lists.ShowLists.webTitle(); 
-    
+    Lists.ShowLists.webTitle().then(
+            function (data) {
+                alert(data);
+            }, 
+            function (sender, args) {
+                alert(args.get_message());
+            }
+        ); 
 });
 
 
