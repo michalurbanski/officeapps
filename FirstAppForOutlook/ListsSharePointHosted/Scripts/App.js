@@ -7,14 +7,17 @@ window.WebMethods = window.WebMethods || {}
 
 $(document).ready(function () {
 
+    $('#webTitleButton').click(ShowWebTitle);
+
+});
+
+function ShowWebTitle() {
     WebMethods.Web.getWebTitle().then(function (webTitle) {
         alert(webTitle);
     }, function (sender, args) {
         alert(args.get_message());
     });
-
-});
-
+};
 
 //var context = SP.ClientContext.get_current();
 //var user = context.get_web().get_currentUser();
