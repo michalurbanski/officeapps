@@ -1,27 +1,18 @@
 ﻿/// <reference path="Lists.js" />
+/// <reference path="Web.js" />
 'use strict';
 
 window.Lists = window.Lists || {}; // Creates new "Lists" object
+window.WebMethods = window.WebMethods || {}
 
 $(document).ready(function () {
 
-    Lists.ShowLists.webPromise().then(
-            function (web) {
-                alert(Lists.ShowLists.getWebTitle(web)); 
-            }, 
-            function (sender, args) {
-                alert(args.get_message());
-            }
-        );
+    WebMethods.Web.getWebTitle().then(function (webTitle) {
+        alert(webTitle);
+    }, function (sender, args) {
+        alert(args.get_message());
+    });
 
-    //Lists.ShowLists.webTitle().then(
-    //        function (data) {
-    //            alert(data);
-    //        }, 
-    //        function (sender, args) {
-    //            alert(args.get_message());
-    //        }
-    //    ); 
 });
 
 
